@@ -7,7 +7,7 @@
                 </a>
             </div>
             <div class="v-nav-to-social-media_list_item">
-                <a href="#" target="_blank">
+                <a href="https://discord.gg/SQ4WGdxZ" target="_blank">
                     <img src="../assets/links/Discord.png" alt="discord">
                 </a>
             </div>
