@@ -1,22 +1,22 @@
 <template>
     <div class="v-nav-to-content">
-        <ul>
-            <li>
+        <div class="v-nav-to-content_list">
+            <div class="v-nav-to-content_list_item">
                 <a href="#about">
                     <img src="../assets/links/About.png" alt="about">
                 </a>
-            </li>
-            <li>
+            </div>
+            <div class="v-nav-to-content_list_item">
                 <a href="#roadmap">
                     <img src="../assets/links/Roadmap.png" alt="roadmap">
                 </a>
-            </li>
-            <li>
+            </div>
+            <div class="v-nav-to-content_list_item">
                 <a href="#gallery">
                     <img src="../assets/links/Gallery.png" alt="gallery">
                 </a>
-            </li>
-        </ul>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -26,16 +26,17 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    ul {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    &_list {
         margin: 0;
         padding: 0;
-        list-style-type: none;
-        overflow: hidden;
-        li {
-            float: left;
-            a {
-                padding: 1rem;
-            }
+        display: flex;
+        justify-content: space-between;
+        &_item {
+            padding: .5rem;
             &:hover {
                 opacity: .6;
             }

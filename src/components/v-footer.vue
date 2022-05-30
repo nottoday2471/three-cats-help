@@ -27,4 +27,14 @@
         }
     }
 }
+
+@media only screen and (max-width: 428px) {
+    .v-footer {
+        &_text {
+            p {
+                font-size: 1.25rem;
+            }
+        }
+    }
+}
 </style>

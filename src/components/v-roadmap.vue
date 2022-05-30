@@ -2,6 +2,7 @@
     <div class="v-roadmap" id="roadmap">
         <div class="v-roadmap_title">
             <img src="../assets/links/Roadmap-title.png" alt="roadmap-title">
+            <img src="../assets/links/Roadmap-mobile.png" alt="roadmap-title" class="mobile-roadmap-title">
         </div>
         <div class="v-roadmap_wrapper">
             <div class="v-roadmap_wrapper_content">
@@ -17,6 +18,7 @@
                 </div>
                 <div class="v-roadmap_wrapper_content_picture">
                     <img src="../assets/links/Roadmap-picture2.png" alt="roadmap-title">
+                    <img src="../assets/links/Roadmap-picture-mobile.png" alt="roadmap-title" class="roadmap-picture">
                 </div>
             </div>
         </div>
@@ -32,6 +34,9 @@
     &_title {
         display: flex;
         justify-content: center;
+        .mobile-roadmap-title {
+            display: none;
+        }
     }
     &_wrapper {
         display: flex;
@@ -60,7 +65,51 @@
                 }
             }
             &_picture {
+                .roadmap-picture {
+                    display: none;
+                }
+            }
+        }
+    }
+}
 
+@media only screen and (max-width: 1350px) {
+    .v-roadmap {
+        height: 812px;
+        &_title {
+            img {
+                display: none;
+            }
+            .mobile-roadmap-title {
+                display: block;
+            }
+        }
+        &_wrapper {
+            padding: .5rem 0 0 0;
+            &_content {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                margin: 1rem 0 0 0;
+                max-width: 350px;
+                &_text {
+                    font-size: 1rem;
+                    p {
+                        margin: 1rem 0 0 0;
+                        padding: 0;
+                    }
+                    &_secret-text {
+                        font-size: 1.75rem;
+                    }
+                }
+                &_picture {
+                    img {
+                        display: none;
+                    }
+                    .roadmap-picture {
+                        display: block;
+                    }
+                }
             }
         }
     }

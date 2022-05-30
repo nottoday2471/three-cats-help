@@ -2,6 +2,7 @@
     <div class="v-about" id="about">
         <div class="v-about_page">
             <img src="../assets/pages/About-page.png" alt="about-page">
+            <img src="../assets/pages/About-page-mobile.png" alt="about-page" class="about-mobile-page">
             <div class="v-about_page_text">
                 <p>The collection of three help cats is not about commercial earnings for the author. <br><br>
                     This collection is the first of a series that will appear in the future. 
@@ -32,6 +33,13 @@
     &_page {
         padding: 1rem;
         position: relative;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .about-mobile-page {
+            display: none;
+        }
         &_text {
             position: absolute;
             left: 50%;
@@ -43,6 +51,68 @@
                 margin: 0;
                 padding: 0;
                 font-size: 1.75rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .v-about {
+
+        &_page {
+            &_text {
+                p {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .v-about {
+
+        &_page {
+            &_text {
+                p {
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .v-about {
+
+        &_page {
+            &_text {
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 428px) {
+    .v-about {
+        padding: 1rem 0 0 0;
+        height: 812px;
+        &_page {
+            padding: 1rem;
+            img {
+                display: none;
+            }
+            .about-mobile-page {
+                display: block;
+            }
+            &_text {
+                margin: 1.5rem 0 0 0;
+                p {
+                    font-size: 1rem;
+                    padding: 1rem;
+                }
             }
         }
     }
