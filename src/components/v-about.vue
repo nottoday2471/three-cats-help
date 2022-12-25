@@ -20,12 +20,31 @@
                 </p>
             </div>
         </div>
+
+
+
+
+
+
+
+
+
     </div>
+
+
+
+
+
+
+
+
+
+
 </template>
 
 <style lang="scss" scoped>
 .v-about {
-    background: url('../assets/backgrounds/Cat-paws.png'), #E3FFFA;
+    //background: url('../assets/backgrounds/Cat-paws.png'), #E3FFFA;
     width: 100%;
     display: flex;
     justify-content: center;
